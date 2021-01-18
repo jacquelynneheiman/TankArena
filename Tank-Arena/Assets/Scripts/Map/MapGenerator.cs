@@ -151,6 +151,12 @@ public class MapGenerator : MonoBehaviour
                         topper.transform.forward = -topper.transform.forward;
                     }
                 }
+
+                if(topperType == Toppers.powerUpSpawn)
+                {
+                    topper.name = "(" + x.ToString() + ", " + z.ToString() + ")";
+                    GameManager.instance.powerUpSpawns.Add(topper.transform);
+                }
             }
         }
 

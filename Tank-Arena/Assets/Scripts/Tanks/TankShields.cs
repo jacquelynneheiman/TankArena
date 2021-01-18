@@ -17,6 +17,12 @@ public class TankShields : MonoBehaviour
         UpdateUI();
     }
 
+    public void RestoreShields()
+    {
+        currentShield = maxShields;
+        UpdateUI();
+    }
+
     public void TakeShieldDamage(TankData tank, float amount)
     {
         float delta = currentShield - amount;

@@ -656,6 +656,7 @@ MonoBehaviour:
   - {fileID: 1682624151234574662, guid: eafebaba6f0ac4843a597cb46c391c6e, type: 3}
   - {fileID: 2809933651794015946, guid: 662d362e90365174c90e0358f0c49069, type: 3}
   - {fileID: 8608422792174096993, guid: f7acffa822e4681429e04071415c1815, type: 3}
+  - {fileID: 9188662420286546937, guid: 3f3d0c4a5e26b344c951565fbb638024, type: 3}
 --- !u!1 &1469548178
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,16 +846,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
+  inputManager: {fileID: 1524009520}
+  availablePickups: []
   availableSpawnLocations: []
   unavailableSpawnLocations: []
+  powerUpSpawns: []
   playerPrefabs: {fileID: 9115837580856862066, guid: 5ca9886feb21aac42b5764ef6ac9e12c,
     type: 3}
   cameraPrefab: {fileID: 5765412097883973564, guid: 41c539a1e92536a49a4c265d2fb2cdad,
     type: 3}
-  inputManager: {fileID: 1524009520}
+  pickupPrefabs:
+  - {fileID: 6228281827167876800, guid: 38eb6f53e27664745935ceaa798e1e1d, type: 3}
+  - {fileID: 1779820633817398578, guid: 1b316e37c012bea46b276a21a1337de5, type: 3}
+  - {fileID: 6751244976291132905, guid: aa0cfad7e845a3d4bb88ad6d7b40dffe, type: 3}
   shieldFill: {fileID: 4424594780839466388}
   healthFill: {fileID: 8283454877061821774}
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 1469548179}
 --- !u!4 &1927864493
 Transform:
   m_ObjectHideFlags: 0

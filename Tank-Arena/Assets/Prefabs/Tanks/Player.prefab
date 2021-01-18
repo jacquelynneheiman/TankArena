@@ -145,8 +145,12 @@ MonoBehaviour:
   health: {fileID: 9115837580856862351}
   shield: {fileID: 9115837580856862350}
   powerUps: {fileID: 9115837580856862345}
+  audioSource: {fileID: 0}
   gun: {fileID: 9116584824006834081}
   damage: 12.5
+  startRotateGun: {fileID: 0}
+  rotateGun: {fileID: 0}
+  stopRotateGun: {fileID: 0}
 --- !u!114 &9115837580856862349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  maxHealth: 0
+  maxHealth: 100
   healthFill: {fileID: 0}
 --- !u!114 &9115837580856862350
 MonoBehaviour:

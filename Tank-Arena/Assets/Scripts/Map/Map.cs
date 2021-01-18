@@ -22,6 +22,6 @@ public enum TerrainType
 
 public enum Toppers
 {
-    none, bones, cactus, cornField, desertPlant, farmhouse, house1, house2, playerSpawn
+    none, bones, cactus, cornField, desertPlant, farmhouse, house1, house2, playerSpawn, powerUpSpawn
 }
 

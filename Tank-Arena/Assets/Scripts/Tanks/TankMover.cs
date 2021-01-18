@@ -11,6 +11,7 @@ public class TankMover : MonoBehaviour
 
     Quaternion targetRotation;
     Rigidbody rb;
+   
 
     public Quaternion TargetRotation { get { return targetRotation; } }
 
@@ -18,6 +19,11 @@ public class TankMover : MonoBehaviour
     {
         targetRotation = transform.rotation;
         rb = GetComponent<Rigidbody>();
+    }
+
+    public void SpeedBoost(float newSpeed)
+    {
+        moveSpeed = newSpeed;
     }
 
     public void Move(float direction)

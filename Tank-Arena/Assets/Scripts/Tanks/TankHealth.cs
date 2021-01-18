@@ -7,7 +7,7 @@ public class TankHealth : MonoBehaviour
 {
     [Header("Stats")]
     public float currentHealth;
-    public float maxHealth;
+    public float maxHealth = 100f;
 
     [Header("UI Components")]
     public Image healthFill;
@@ -18,12 +18,25 @@ public class TankHealth : MonoBehaviour
         UpdateUI();
     }
 
+    public void Repair(float amount)
+    {
+        currentHealth += amount;
+
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        UpdateUI();
+    }
+
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
 
         if(currentHealth < 0)
         {
+            currentHealth = 0;
             Debug.Log("Player is dead");
         }
 
